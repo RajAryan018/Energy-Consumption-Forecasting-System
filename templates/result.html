@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Energy Consumption Prediction Result for {{ state }}</h1>
+    <img src="data:image/png;base64,{{ plot_data }}" alt="Prediction Plot">
+    <br><br>
+    <h2>Evaluation Metrics</h2>
+    <p>Root Mean Squared Error (RMSE): {{ rmse }}</p>
+    <p>Mean Absolute Error (MAE): {{ mae }}</p>
+    <p>R-squared (R²): {{ r2 }}</p>
+    <br><br>
+    <a href="{{ url_for('index') }}">Back to Input</a>
+</body>
+</html>
