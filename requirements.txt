@@ -1,7 +1,7 @@
 Flask==2.2.2
 joblib==1.2.0
 matplotlib==3.7.2
-numpy==2.0.1
+numpy==1.23.5  # Downgraded to be compatible with other packages
 pandas==2.0.3
 scikit_learn==1.3.2
 tensorflow==2.16.1
